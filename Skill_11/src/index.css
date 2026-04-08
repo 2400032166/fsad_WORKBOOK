@@ -1,0 +1,85 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fa;
+}
+
+/* Main Container */
+#root {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: #444;
+}
+
+/* Buttons */
+button {
+  margin: 5px;
+  padding: 8px 15px;
+  border: none;
+  background-color: #4cafef;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3498db;
+}
+
+/* Dropdown */
+select {
+  margin: 10px;
+  padding: 6px;
+}
+
+/* Card Style for Data */
+div > div {
+  background: white;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Text */
+p {
+  margin: 5px 0;
+}
+
+/* Divider */
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin-top: 10px;
+}
+
+/* Center Align Dashboard Buttons */
+h1 + button,
+h1 + button + button,
+h1 + button + button + button {
+  display: inline-block;
+}
+
+/* Optional: Center Button Container */
+button {
+  display: inline-block;
+}
