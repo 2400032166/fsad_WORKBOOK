@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-
 function StudentList() {
   const [students, setStudents] = useState([]);
 
@@ -13,11 +12,9 @@ function StudentList() {
       console.error(error);
     }
   };
-
   useEffect(() => {
     fetchStudents();
   }, []);
-
   return (
     <div>
       <h2>Student List</h2>

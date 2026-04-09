@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import "./StudentManager.css";
-
 function StudentManager() {
-
   const initialStudents = [
     { id: 2400032166, name: "Ruthwika", course: "CSE" },
     { id: 2400032158, name: "Neelima", course: "AI&DS" },
@@ -10,7 +8,6 @@ function StudentManager() {
     { id: 2400032223, name: "Jaswitha", course: "CS" },
     { id: 2400032237, name: "Amulya", course: "CSE" }
   ];
-
   const [students, setStudents] = useState(initialStudents);
 
   const [newStudent, setNewStudent] = useState({
@@ -18,24 +15,20 @@ function StudentManager() {
     name: "",
     course: ""
   });
-
   const handleChange = (e) => {
     const { name, value } = e.target;
     setNewStudent({ ...newStudent, [name]: value });
   };
-
   const addStudent = () => {
     if (newStudent.id && newStudent.name && newStudent.course) {
       setStudents([...students, newStudent]);
       setNewStudent({ id: "", name: "", course: "" });
     }
   };
-
   const deleteStudent = (id) => {
     const updated = students.filter((student) => student.id !== id);
     setStudents(updated);
   };
-
   return (
     <div className="container">
       <h2>Student Manager</h2>

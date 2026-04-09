@@ -1,10 +1,8 @@
 import { useEffect, useState } from "react";
-
 function UserList() {
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-
   useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/users")
       .then((res) => res.json())
@@ -17,7 +15,6 @@ function UserList() {
         setLoading(false);
       });
   }, []);
-
   if (loading) return <p>Loading...</p>;
   if (error) return <p>{error}</p>;
 

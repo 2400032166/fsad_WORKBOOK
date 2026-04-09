@@ -23,7 +23,6 @@ public class Student {
     public void setYear(int year) {
         this.year = year;
     }
-
     public void display() {
         System.out.println("Student ID : " + studentId);
         System.out.println("Name       : " + name);

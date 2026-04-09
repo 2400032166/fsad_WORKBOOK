@@ -6,10 +6,10 @@ import org.springframework.stereotype.Component;
 @Component
 public class StudentAnno {
 
-    @Value("201")
+    @Value("32166")
     private int studentId;
 
-    @Value("Ananya")
+    @Value("Ruthwika")
     private String name;
 
     private String course;
@@ -17,7 +17,7 @@ public class StudentAnno {
 
     // Constructor Injection
     public StudentAnno(
-            @Value("AI & ML") String course,
+            @Value("CSE-1") String course,
             @Value("2025") int year) {
         this.course = course;
         this.year = year;
